@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+/* Header element styles /
+/ Stil ayarları için başlık (header) elementi */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin: 10px;
+  overflow: hidden;
+  margin-right: 16px;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+}
+
+/* .left ve .right sınıflarına ait elementler (muhtemelen bir navigasyon menüsü) flex konteyner olarak belirleniyor ve çocuk elementler list-style'ı sıfırlanmış oluyor. Çocuk elementler (muhtemelen liste öğeleri) arasında 15px üst ve alt margin, 30px sağ ve sol margin uygulanıyor. .left ve .right sınıfına ait liste öğeleri arasında da 0 margin sol ve sağ, 10px margin üst ve alt uygulanıyor. */
+
+.left,
+.right {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  margin: 15px 30px;
+}
+.left li,
+.right li {
+  margin: 0 10px;
+}
+
+/* Anchor yani "a" elementleri için alt çizgi olmadan (text-decoration: none) ve #5f6368 renginde (color: #5f6368) stil belirleniyor. */
+
+a {
+  text-decoration: none;
+  color: #5f6368;
+}
+
+/* .container sınıfına ait elementler (muhtemelen bir içerik kutusu) ortalanmış olarak (text-align: center) belirleniyor. Elementin etrafında 100px margin ekleniyor. Flex konteyner olarak (display: flex) belirleniyor ve içerik ortalanıyor (justify-content: center ve align-items: center). Elementin içindeki öğeler sütun olarak (flex-direction: column) düzenleniyor. */
+
+.container {
+  text-align: center;
+  margin: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* .footer sınıfına ait elementler (muhtemelen bir footer alanı) flex konteyner olarak belirleniyor. Üst kenarına 1px kalınlığında ve #dadce0 renginde bir üst kenar sınırı (border-top) uygulanıyor. Sabit bir konumda (position: fixed) alt kenara (bottom: 0) yerleştiriliyor. Genişliği %100 olarak belirleniyor ve arkaplan rengi #f2f2f2 olarak ayarlanıyor. Çocuk elementler arasında eşit aralıklarla (justify-content: space-between) dağıtılıyor. */
+
+.footer {
+  display: flex;
+  border-top: 1px solid #dadce0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  justify-content: space-between;
+}
+
+/* Panel element styles /
+/ Stil ayarları için panel (panel) elementi */
+
+.panel {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input container styles */
+/* Stil ayarları için giriş (input) container elementi */
+
+.input-container {
+  display: flex;
+  border: 1px solid #edeef1;
+  border-radius: 33px;
+  width: 577px;
+  height: 44px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+/* Logo styles */
+/* Stil ayarları için logo elementi */
+
+.logo {
+  margin-bottom: 25px;
+}
+
+/* Input container image styles */
+/* Stil ayarları için giriş containerı içindeki resim (image) elementi */
+
+.input-container img {
+  margin-right: 15px;
+}
+
+/* Search icon styles */
+/* Stil ayarları için arama ikonu (search icon) elementi */
+
+.search-icon {
+  width: 1.4em;
+  margin-left: 15px;
+}
+
+/* Input area styles */
+/* Stil ayarları için giriş alanı (input area) elementi */
+
+.input-area {
+  color: transparent;
+  flex: 100%;
+  white-space: pre;
+  font: 16px arial, sans-serif;
+  line-height: 34px;
+  height: 34px !important;
+  display: block;
+}
+
+/* Button styles */
+/* Stil ayarları için buton (button) elementi */
+
+.btn {
+  color: #5f6368;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  height: 36px;
+  font-size: 14px;
+  margin-left: 8px;
+  width: 140px;
+}
+
+/* Input styles */
+/* Stil ayarları için giriş (input) elementi */
+
+.input {
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.87);
+  word-wrap: break-word;
+  outline: none;
+  display: flex;
+  flex: 100%;
+  margin-top: -68px;
+  font: 16px arial, sans-serif;
+  line-height: 34px;
+  width: 480px;
+  height: 34px !important;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+  appearance: textfield;
+  cursor: text;
+  border: none;
+}

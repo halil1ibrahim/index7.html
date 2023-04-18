@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Google</title>
+</head>
+
+<body>
+    <!-- <header>: Sayfanın başlık kısmını temsil eden bir HTML etiketi. -->
+    <header>
+        <!-- <nav class="left"> ve <nav class="right">: Sırasıyla sol ve sağ yönlendirme menülerini temsil eden HTML etiketleri. -->
+        <nav class="left">
+            <!-- <li>: Liste öğelerini temsil eden HTML etiketi. -->
+            <li>
+                <!-- <a href="...">: Bir bağlantıyı temsil eden HTML etiketi. "href" özelliği, bağlantının hedef URL'sini belirtir. -->
+                <a
+                    href="https://about.google/?utm_source=google-TR&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
+            </li>
+            <li>
+                <a
+                    href="https://about.google/?utm_source=google-TR&utm_medium=referral&utm_campaign=hp-footer&fg=1">Store</a>
+            </li>
+        </nav>
+        <nav class="right">
+            <li>
+                <a href="https://mail.google.com/mail/?tab=wm&authuser=0&ogbl">Gmail</a>
+            </li>
+            <li>
+                <a href="https://www.google.com.tr/imghp?hl=en&tab=wi&authuser=0&ogbl">Images</a>
+            </li>
+            <li>
+                <a href="https://www.google.com.tr/intl/en/about/products?tab=wh">
+                    <!-- <img src="..." alt="..." style="...">: Bir resmi temsil eden HTML etiketi. "src" özelliği, resmin kaynak URL'sini belirtir. "alt" özelliği, resmin alternatif metnini belirtir. "style" özelliği, resmin stilini belirler. -->
+                    <img src="galery/appsbutton.svg" alt="" style="width: 16px; height: 16px; margin-right: 3px;"></a>
+            </li>
+            <li>
+                <a href="https://github.com/halil1ibrahim" target="_blank">
+
+                    <img src="galery/102017766.png" alt="profil" /></a>
+            </li>
+        </nav>
+    </header>
+    <!-- <section class="container">: Sayfanın ana içerik bölümünü temsil eden bir HTML etiketi. -->
+    <section class="container">
+
+        <article class="logo">
+            <img src="galery/logo.png" width="350px" alt="logo" />
+        </article>
+        <!-- <article class="logo">, <article class="input-container"> ve <article class="buttons">: Sırasıyla logo, giriş alanı ve düğmeleri temsil eden HTML etiketleri.
+        -->
+        <article class="input-container">
+            <!-- <svg class="search-icon">: Bir SVG (Ölçeklendirilebilir Vektör Grafikleri) resmini temsil eden HTML etiketi. "focusable" özelliği, resmin odaklanabilir olup olmadığını belirtir. "xmlns" özelliği, kullanılan XML ad alanını belirtir. "viewBox" özelliği, resmin görünüm kutusunu belirtir. -->
+            <svg class="search-icon" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <a href="#">
+                    <path style="fill: #afafaf;"
+                        d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                    </path>
+                </a>
+            </svg>
+            <!-- <input type="text" class="input" maxlength="2048" autofocus="true">: Bir giriş alanını temsil eden HTML etiketi. "type" özelliği, giriş alanının tipini belirtir. "class" özelliği, giriş alanının CSS sınıfını belirtir. "maxlength" özelliği, giriş alanına maksimum karakter uzunluğunu belirtir. "autofocus" özelliği, giriş alanının otomatik olarak odaklanmasını belirtir. -->
+            <div class="input-enter">
+                <div class="input-area">
+                    <input type="text" class="input" maxlength="2048" autofocus="true" />
+                </div>
+            </div>
+            <a href="#"> <img src="galery/voicelogo.png" alt="voicelogo" width="22px" height="22px"></a>
+        </article>
+        <!-- <button class="btn">: Bir düğmeyi temsil eden HTML etiketi. "class" özelliği, düğmenin CSS sınıfını belirtir. -->
+        <article class="buttons">
+            <button class="btn"><a href="#">Google Search</a></button>
+            <button class="btn"><a href="#">I'm Feeling Lucky</a><button>
+        </article>
+
+    </section>
+    <!-- <footer class="footer">: Sayfanın alt bilgi bölümünü temsil eden bir HTML etiketi. -->
+    <footer class="footer">
+        <!-- <ul class="left"> ve <ul class="right">: Sırasıyla sol ve sağ alt bilgi menülerini temsil eden HTML etiketleri. -->
+        <ul class="left">
+            <li>
+                <a
+                    href="https://www.google.com/intl/en_tr/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+            </li>
+            <li>
+                <a
+                    href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+            </li>
+
+            <li>
+                <a href="https://google.com/search/howsearchworks/?fg=1">How Search works</a>
+            </li>
+        </ul>
+        <ul class="right">
+            <li style="float: right">
+                <a href="https://policies.google.com/privacy?hl=en-TR&fg=1">Privacy</a>
+            </li>
+            <li style="float: right">
+                <a href="https://policies.google.com/terms?hl=en-TR&fg=1">Terms</a>
+            </li>
+            <li style="float: right; margin-right: 35px">
+                <a href="https://www.google.com/preferences?hl=en">Settings</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
